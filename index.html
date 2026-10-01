@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nic Ferencko | Programming Projects</title>
+<meta name="description" content="A small portfolio of programming projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef1f5;
+    --surface: #ffffff;
+    --ink: #17233b;
+    --muted: #5b6678;
+    --accent: #2850e8;
+    --line: #c3cad6;
+    --font: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101827;
+      --surface: #172238;
+      --ink: #e8edf6;
+      --muted: #9aa7bd;
+      --accent: #7f9bff;
+      --line: #34425e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    line-height: 1.55;
+  }
+  main { max-width: 64rem; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+  header { max-width: 38rem; margin-bottom: 3.5rem; }
+  h1 {
+    font-size: clamp(2.6rem, 8vw, 4.6rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.25rem;
+  }
+  header p { font-size: 1.15rem; color: var(--muted); margin: 0; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .card h2 { font-size: 1.4rem; margin: 0; letter-spacing: -0.01em; }
+  .card p { margin: 0; color: var(--muted); }
+
+  /* The one real project: wide, with a solid accent edge */
+  .card.live {
+    grid-column: 1 / -1;
+    border-left: 6px solid var(--accent);
+    padding: 2.25rem;
+  }
+  .card.live h2 { font-size: 2rem; font-weight: 800; }
+  .card.live p { font-size: 1.1rem; color: var(--ink); max-width: 40rem; }
+
+  /* Placeholders: dashed outline reads as "empty slot" */
+  .card.empty {
+    background: transparent;
+    border: 2px dashed var(--line);
+    min-height: 11rem;
+  }
+  .card.empty h2 { color: var(--muted); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+  .tags li {
+    font-size: 0.85rem;
+    padding: 0.15rem 0.65rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+  }
+  .links { display: flex; gap: 1.25rem; margin-top: 0.4rem; }
+  .links a { color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.95rem; }
+  footer a { color: inherit; }
+
+  @media (max-width: 40rem) {
+    .grid { grid-template-columns: 1fr; }
+    main { padding-top: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Things I've built</h1>
+    <!-- EDIT: replace with a sentence about you -->
+    <p>I'm Nic Ferencko, a programmer who likes small, finished projects. Here are five of them, one at a time.</p>
+  </header>
+
+  <section class="grid" aria-label="Projects">
+
+    <!-- Project 1: real -->
+    <article class="card live">
+      <h2>This portfolio site</h2>
+      <p>A static page that lists my programming projects, hosted for free on GitHub Pages. It uses plain HTML and CSS with no build step, so a push to the repo updates the live site.</p>
+      <ul class="tags">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>GitHub Pages</li>
+      </ul>
+      <div class="links">
+        <!-- EDIT: replace YOUR-USERNAME and YOUR-REPO -->
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View source</a>
+      </div>
+    </article>
+
+    <!-- Projects 2-5: placeholders. To fill one in, remove class "empty",
+         then replace the title, text, tags and link. -->
+    <article class="card empty">
+      <h2>Project 2</h2>
+      <p>Coming soon. Add a title, one sentence about what it does, and a link.</p>
+    </article>
+
+    <article class="card empty">
+      <h2>Project 3</h2>
+      <p>Coming soon. Add a title, one sentence about what it does, and a link.</p>
+    </article>
+
+    <article class="card empty">
+      <h2>Project 4</h2>
+      <p>Coming soon. Add a title, one sentence about what it does, and a link.</p>
+    </article>
+
+    <article class="card empty">
+      <h2>Project 5</h2>
+      <p>Coming soon. Add a title, one sentence about what it does, and a link.</p>
+    </article>
+
+  </section>
+
+  <footer>
+    <!-- EDIT: your links -->
+    <a href="https://github.com/YOUR-USERNAME">GitHub profile</a>
+  </footer>
+</main>
+</body>
+</html>

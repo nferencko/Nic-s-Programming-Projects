@@ -44,3 +44,6 @@ The first deploy usually takes a minute or two. Refresh the Pages settings scree
 
 If you tell me what you're building the site with (plain HTML, React, Hugo, etc.), I can give you more specific steps.
 
+## Step 2: Prompt AI to Build Artifact
+
+Prompt: I would like to build a small portfolio website using git hub pages to showcase 5 programming projects. There should be a card for each of the five projects. Right now, only the first card is real. The first project is the website we are building right now. The four others are placeholders for future projects.
