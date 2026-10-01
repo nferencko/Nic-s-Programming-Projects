@@ -46,4 +46,8 @@ If you tell me what you're building the site with (plain HTML, React, Hugo, etc.
 
 ## Step 2: Prompt AI to Build Artifact
 
-Prompt: I would like to build a small portfolio website using git hub pages to showcase 5 programming projects. There should be a card for each of the five projects. Right now, only the first card is real. The first project is the website we are building right now. The four others are placeholders for future projects.
+**Prompt:** I would like to build a small portfolio website using git hub pages to showcase 5 programming projects. There should be a card for each of the five projects. Right now, only the first card is real. The first project is the website we are building right now. The four others are placeholders for future projects.  
+
+**Result:** I copied what it gave me in my index.html file.  
+
+**Additional Work:** Went in to the index file and edited where it prompted me. Went through line by line trying to understand what was going on. This is my first experience with html so having AI help was nice.
