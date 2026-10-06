@@ -51,3 +51,15 @@ If you tell me what you're building the site with (plain HTML, React, Hugo, etc.
 **Result:** I copied what it gave me in my index.html file.  
 
 **Additional Work:** Went in to the index file and edited where it prompted me. Went through line by line trying to understand what was going on. This is my first experience with html so having AI help was nice.
+
+**Prompt 2:**: I have a git pages website. I was hoping you could give it more pizaz with different coloring and themes. Could I give you the git pages url and can you show me some possible themes.
+
+**Result:** It asked what I was looking for in terms of theme so I prompted it once more.
+
+**Prompt 2 Coninued:** Vibe is a project doc. A logo with a basketball would fun if possible but I don't want that to be the theme. Something professional
+
+**Result:** I copied what it gave me in index.html
+
+**Prompt 3:** This looks great. For each artifiact, can you put a place holder for the link for the artifact and a reflection spot.
+
+**Result:** I copied what it gave me in index.html. I updated the URL for the first artifact to be this git repo.
