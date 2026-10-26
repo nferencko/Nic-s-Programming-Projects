@@ -355,18 +355,37 @@
         </div>
       </div>
     </section>
-    <section class="project future">
-      <h2>Project 3</h2>
-      <p>Coming soon.</p>
+    <section class="project">
+      <h2>Recipe Generator</h2>
+      <p>A pantry manager that Claude can control through a local MCP server, plus a small web page that uses the same
+        code. Claude decides which tools to call and writes the meal plan, and it can draft new recipes when nothing in
+        the pantry matches one. Plain Python code does everything else: it validates every input, matches ingredients
+        against recipes, flags what is about to expire, and is the only thing that writes to the data files.</p>
+      <ul class="tags">
+        <li>Python</li>
+        <li>MCP</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Claude Code</li>
+      </ul>
+      <a class="btn" href="https://github.com/nferencko/Recipe_Generator">View source</a>
       <div class="meta">
         <div>
           <h3>Project link</h3>
-          <p class="ph"><a href="#">Add project link here</a></p>
+          <p class="ph"><a
+              href="https://github.com/nferencko/Recipe_Generator">github.com/nferencko/Recipe_Generator</a>
+          </p>
         </div>
         <div>
           <h3>Reflection</h3>
-          <p class="ph box">What did I build, what was hard, and what would I do differently? Write a few sentences
-            here.</p>
+          <p class="ph box">I built a pantry manager that Claude can use through an MCP server, and then a web page on top of it.
+            The biggest thing I learned was to keep the model's job small. Claude only picks which tools to call and writes the
+            meal plan or recipe ideas, and my code does all the checking, the ingredient math, and the saving. That made
+            problems easy to place. A rejected quantity or a wrong recipe match was my code. A dinner plan that included a
+            breakfast recipe was the model's judgment. Some things broke along the way, like a typo in the page's JavaScript
+            that stopped the "count" unit from showing up, and recipe suggestions that first appeared as
+            "[object HTMLDivElement]". Next time I'll open the page in a browser after every change instead of only
+            running tests.</p>
         </div>
       </div>
     </section>
